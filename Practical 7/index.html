@@ -1,0 +1,47 @@
+<!-- IU1941230093 Saurav Panchal
+Practical 7 | Web Technology -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator | Practical 7</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="box">
+            <div class="box-container">
+                <input id="display" type="text" value="0">
+                <div class="box-container-button">
+
+                    <div class="box-container-button-left">
+                        <button class="number-button" onclick="numberPress(value)" value="7">7</button>
+                        <button class="number-button" onclick="numberPress(value)" value="8">8</button>
+                        <button class="number-button" onclick="numberPress(value)" value="9">9</button>
+                        <button class="number-button" onclick="numberPress(value)" value="4">4</button>
+                        <button class="number-button" onclick="numberPress(value)" value="5">5</button>
+                        <button class="number-button" onclick="numberPress(value)" value="6">6</button>
+                        <button class="number-button" onclick="numberPress(value)" value="1">1</button>
+                        <button class="number-button" onclick="numberPress(value)" value="2">2</button>
+                        <button class="number-button" onclick="numberPress(value)" value="3">3</button>
+                        <button class="number-button" style="width: 82px;" onclick="numberPress(value)" value=".">.</button>
+                        <button class="number-button" onclick="numberPress(value)" value="0">0</button>
+                        <button class="number-button" style="width:82px; padding-left: 22px;" onclick="numberPress(value)" value="00">00</button>
+                    </div>
+
+                    <div class="box-container-button-right">
+                        <button class="symbol-button" onclick="clearPress()">CLEAR</button>
+                        <button class="symbol-button" onclick="numberPress(value)" value="/">/</button>
+                        <button class="symbol-button" onclick="numberPress(value)" value="*">*</button>
+                        <button class="symbol-button" onclick="numberPress(value)" value="+">+</button>
+                        <button class="symbol-button" onclick="numberPress(value)" value="-">-</button>
+                        <button class="symbol-button" onclick="operationPress()" value="=">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

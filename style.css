@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+li, a, button, p, pr
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration:none;
+    list-style: none;
+}
+
+#header1 img
+{
+    border: none;
+    margin: 20px ;
+    position: relative;
+    float: left;
+    color:white;
+}
+
+.top-title
+{
+    /* margin: 20px auto; */
+    font-variant: small-caps;
+    font-size: 2.7em;
+    margin: 5px 20px 20px 205px;
+    line-height: 185%;
+    /* width:500px; */
+    position: absolute;
+}
+
+.menu
+{
+    position: relative;
+    display: inline-block;
+}
+
+#header1
+{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+}
+
+#header2
+{
+    position:absolute;
+    margin: 255px 5px 0px 20px;
+    width: 100%;
+    display: inline;
+}
+
+#contact-wrapper-right
+{
+    position:relative;
+    float: right;
+    margin: 20px;
+    padding:0;
+    text-align: right;
+    /* border: 1px solid blue; */
+}
+
+#mobile img, #mail img
+{
+    width: auto;
+    height: auto;
+    float: left;
+    /* border:3px solid blue; */
+    margin: 5px;
+    padding: 5px;
+}
+
+#mobile p, #mail p
+{
+    width: 250px;
+    height: 50px;
+    float: left;
+    /* border:3px solid blue; */
+    margin: 5px;
+    padding: 5px;
+    font-size: 25px;
+    margin-top:9px;
+}
+
+#contact-wrapper-right-social
+{
+    float: right;
+    width: 320px;
+    /* border: 1px solid blue; */
+    margin-left: 2px;
+}
+
+#contact-wrapper-right-social img
+{
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+#contact-wrapper-right-social img:hover
+{
+    transform: scale(1.4);
+}
+
+.nav_links
+{
+    width:97%;
+}
+
+.nav_links ul li a
+{
+    display:block;
+    padding: 9px 25px;
+}
+
+.nav_links ul li a:hover
+{
+    padding: 9px 25px;
+    color: white;
+    border: none;
+    background-color: rgba(0, 136, 169, 0.8);
+    transition: background-color 210ms;
+}
+
+.sub-menu-1, .sub-menu-2
+{
+    display:none;
+    width:117px;
+    text-align: center;
+    border: 1px groove rgba(0, 136, 169, 1);
+}
+
+.contact-nav-button button
+{
+    float: right;
+    padding: 9px 25px;
+    background: transparent;
+    color:white;
+    border-radius: 50px;
+    border: 3px solid rgba(0, 136, 169, 1);
+    cursor: pointer;
+}
+
+.contact-nav-button button:hover {
+    animation-name: anime-contact;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.menu:hover .sub-menu-1
+{
+    display:block;
+    position: absolute;
+    z-index: 999;
+}
+
+.sub-menu-1 li:hover .sub-menu-2
+{
+    display:block;
+    position:absolute;
+    margin-left: 116px;
+    margin-top: -38px;
+    z-index: 999;
+}
+
+.image-gallery marquee
+{
+    margin: -15px 20px 0px 20px;
+    height: 325px;
+    width: 97%;
+    padding: 15px;
+}
+
+.image-gallery marquee img
+{
+    align-content:center;
+    margin: 0px 15px 0px 15px;
+    position: relative;
+    background: transparent;
+}
+
+.image-gallery marquee img:hover
+{
+    cursor: pointer;
+    border: 3px solid rgba(0, 136, 169, 1);
+    border-radius: 15px;
+    position: relative;
+    animation-name: anime-image;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 1ms;
+    margin: 0px 15px 0px 15px;
+    transition: border 200ms;
+}
+
+@keyframes anime-contact {
+    0% {transform: translate(0px,0px);}
+    25% {transform: rotateX(5deg)}
+    50% {transform: translateY(-4px);}
+    75% {transform: rotateY(5deg)}
+    100% {transform: translateX(1px);}
+}
+
+@keyframes anime-image {
+    0% {transform: scale(1.07);}
+    25% {transform: rotate(2Deg);}
+    50% {transform: rotate(-2Deg);}
+    100% {transform: rotate(2Deg);}
+}
